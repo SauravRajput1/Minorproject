@@ -356,6 +356,9 @@ hr {
   .nav__list{
     display: flex;
   }
+  .nav__list2{
+    display: block;
+  }
   .nav__item{
     margin-left: var(--mb-5);
     margin-bottom: 0;
@@ -372,6 +375,19 @@ hr {
   .home__container{
     height: 100vh;
     justify-items: center;
+  }
+  .discover__card {
+    width: 237px;
+  }
+  .discover__container {
+    width: 700px;
+  }
+  .discover__data {
+    left: 1.5rem;
+    bottom: 2rem;
+  }
+  .discover__title {
+    font-size: var(--h2-font-size);
   }
 }
 
@@ -414,4 +430,40 @@ hr {
     width: 380px;
     border-radius: .5rem;
     justify-self: center;
+}
+/*calculator*/
+.calculator{
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.calculator__container{
+  position: relative;
+  text-align: center;
+}
+.calculator__img{
+  width:100%;
+  border-radius: .5rem;
+  justify-content: center;
+}
+.calculator_button{
+    display: inline-table;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+    align-items: center;
+  }
+
+  .calculator_button:hover{
+    background-color: var(--first-color-alt);
+  }
+.calculator__text{
+  font-size: 100px;
+  font-color: var();
+  align-items: center;
+
+
 }
