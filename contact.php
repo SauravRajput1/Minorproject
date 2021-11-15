@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>BMI CALCULATOR</title>
+    <title>CONTACT US</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="img/favicon.ico">
   </head>
@@ -17,7 +16,8 @@
                   <a href="index.html" class="nav__logo">YOUR FITNESS GUIDE</a>
                    <div class="nav__menu" id="nav-menu">
                        <ul class="nav__list">
-              <li class="nav__item"><a href="explore.html" class="nav__link active-link">HEALTH CALCULATOR</a></li>
+              <li class="nav__item"><a href="index.html" class="nav__link active-link">HOME</a></li>
+              <li class="nav__item"><a href="index.html#contact.html" class="nav__link active-link">GOBACK</a></li>
                  <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
               </ul>
                 </div>
@@ -26,54 +26,38 @@
                 </div>
             </nav>
         </header>
-        <main class="1-main">
-
-            <section class="about section bd-container" id="about">
-              <div class="about__container  bd-grid">
-                <div class="about__data">
-                <h2 class="section-title contact__initial">BMI CALCULATOR</h2>
-                <div class=div__bmi>
-                    <img src="img/7.jpg" alt="" class="bmi__img" >
-             </div>
-                <form action="" class="w-50 " onsubmit="return false">
-                <div class="form-group">
-
-                    <label for="weight">Weight:</label>
-                    <input type="number" name="weight" placeholder="Weight in Kg" required="weight" id="weight" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="heigth">Height:</label>
-                    <input type="number" name="Heigth" placeholder="Height in cm" required="height" id="height" class="form-control">
-                </div>
-
-                <div>
-                    <button class="calculator_button btn btn-success" type="submit" onclick="getbmivalue()">CHECK BMI</button>
-                    <button type="reset" class="calculator_button"> reset</button>
-                    <div id="bmi__result" class="card text-center bmi__result">
-                        <table id="bmi__table">
-
-                                <label for="bmi">BMI Value</label>
-                                <input type="" name="BMI value" id="bmivalue" class="form-control">
-                                <img src="img/6.jpg" alt="" class="bmiresult__img">
-                            </div>
-
-
-                </div>
-
-            </form>
-
-            </div>
-            </div>
-            </table>
-
-            <div class="card-footer text-center">A healthy BMI Ranges Between 19 and 25</div>
-
-
-
-            </section>
-
-
-        </main>
+        <hr>
+        <Main>
+          <div class="container">
+           <h3>Contact US </h3>
+           <form action="form-process.php" method="POST">
+               <div class="form-group">
+                   <label for="firstname">Firstname</label>
+                   <input type="text" name="firstname" id="firstname" class="form-control" required>
+               </div>
+               <div class="form-group">
+                   <label for="lastname">Lastname</label>
+                   <input type="text" name="lastname" id="lastname" class="form-control" required>
+               </div>
+               <div class="form-group">
+                   <label for="phone">Phone</label>
+                   <input type="tel" name="phone" id="phone" class="form-control" required>
+               </div>
+               <div class="form-group">
+                   <label for="email">Email</label>
+                   <input type="email" name="email" id="email" class="form-control" required>
+               </div>
+               <div class="form-group">
+                   <label for="message">Message</label>
+                   <input type="text" name="message" id="message" class="form-control" required >
+               </div>
+               <div class="form-group">
+           <button class="button" type="submit">Submit</button>
+           <button class="button" type="reset">Reset</button>
+       </div>
+           </form>
+       </div>
+</Main>
 
         <footer class="footer section bd-container">
               <div class="footer__container bd-grid">
@@ -113,10 +97,6 @@
           </footer>
 
           <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-  <script src="bmi.js"></script>
+          <script src="script.js"></script>
   </body>
 </html>
