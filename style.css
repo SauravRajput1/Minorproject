@@ -410,9 +410,10 @@ hr {
     }
 }
 .one_img{
+  width: 10000px;
+  height: auto;
   max-width: 100%;
-   height: auto;
-  display: block;
+  display:block;
   border-radius: .5rem;
 
 }
